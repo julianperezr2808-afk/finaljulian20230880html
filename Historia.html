@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Historia - ITLA</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- Bootstrap -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+
+  <style>
+    /* Línea del timeline */
+    .timeline {
+      position: relative;
+      padding: 2rem 0;
+    }
+
+    .timeline::before {
+      content: "";
+      position: absolute;
+      left: 50%;
+      width: 4px;
+      height: 100%;
+      background: #0d6efd;
+      transform: translateX(-50%);
+    }
+
+    .timeline-item {
+      position: relative;
+      width: 50%;
+      padding: 20px;
+    }
+
+    .timeline-item.left {
+      left: 0;
+      text-align: right;
+    }
+
+    .timeline-item.right {
+      left: 50%;
+    }
+
+    .timeline-item::before {
+      content: "";
+      position: absolute;
+      top: 20px;
+      width: 20px;
+      height: 20px;
+      background: #0d6efd;
+      border-radius: 50%;
+      z-index: 1;
+    }
+
+    .timeline-item.left::before {
+      right: -10px;
+    }
+
+    .timeline-item.right::before {
+      left: -10px;
+    }
+
+    @media (max-width: 768px) {
+      .timeline::before {
+        left: 8px;
+      }
+
+      .timeline-item {
+        width: 100%;
+        padding-left: 30px;
+        text-align: left;
+      }
+
+      .timeline-item.left,
+      .timeline-item.right {
+        left: 0;
+      }
+
+      .timeline-item::before {
+        left: 0;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+<!-- 🔵 NAVBAR -->
+<nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+  <div class="container">
+    <a class="navbar-brand fw-bold" href="index.html">ITLA</a>
+
+    <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#menu">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="menu">
+      <ul class="navbar-nav ms-auto">
+
+         <li class="nav-item"><a class="nav-link" href="index.html">Inicio</a></li>
+        <li class="nav-item"><a class="nav-link" href="quienes-somos.html">Quiénes Somos</a></li>
+        <li class="nav-item"><a class="nav-link" href="historia.html">Historia</a></li>
+        <li class="nav-item"><a class="nav-link" href="Oferta-Academica.html">Oferta</a></li>
+        <li class="nav-item"><a class="nav-link" href="Cafe-Digital.html">Café Digital</a></li>
+        <li class="nav-item"><a class="nav-link" href="Contacto.html">Contacto</a></li>
+        <li class="nav-item"><a class="nav-link" href="Transparencia.html">Transparencia</a></li>
+        <li class="nav-item"><a class="nav-link" href="gestion-docente.html">Gestión</a></li>
+        <li class="nav-item"><a class="nav-link" href="Rectoria.html">Rectoría</a></li>
+        <li class="nav-item"><a class="nav-link" href="Calidad-de-Gestion.html">Calidad</a></li>
+
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<!-- 🟡 HERO -->
+<section class="bg-light text-center p-5">
+  <div class="container">
+    <h1 class="fw-bold">Nuestra Historia</h1>
+    <p class="lead">Evolución e innovación a través del tiempo</p>
+  </div>
+</section>
+
+<!-- 📜 INTRO -->
+<section class="container mt-5 text-center">
+  <h2 class="fw-bold">Trayectoria del ITLA</h2>
+  <p class="text-muted">
+    Desde su fundación, el ITLA ha sido una institución clave en el desarrollo tecnológico del país.
+  </p>
+</section>
+
+<!-- 🧭 TIMELINE -->
+<section class="timeline container mt-5">
+
+  <!-- ITEM -->
+  <div class="timeline-item left">
+    <div class="card shadow">
+      <div class="card-body">
+        <h5>2000</h5>
+        <p>Fundación del Instituto Tecnológico de las Américas.</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- ITEM -->
+  <div class="timeline-item right">
+    <div class="card shadow">
+      <div class="card-body">
+        <h5>2005</h5>
+        <p>Expansión de programas académicos tecnológicos.</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- ITEM -->
+  <div class="timeline-item left">
+    <div class="card shadow">
+      <div class="card-body">
+        <h5>2015</h5>
+        <p>Incorporación de nuevas tecnologías y laboratorios.</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- ITEM -->
+  <div class="timeline-item right">
+    <div class="card shadow">
+      <div class="card-body">
+        <h5>2020</h5>
+        <p>Transformación digital y educación virtual.</p>
+      </div>
+    </div>
+  </div>
+
+</section>
+
+<!-- 📊 SECCIÓN EXTRA -->
+<section class="bg-light mt-5 p-5 text-center">
+  <div class="container">
+    <h2 class="fw-bold">Crecimiento Institucional</h2>
+
+    <div class="row mt-4">
+      <div class="col-md-4">
+        <h3 class="text-primary">20+</h3>
+        <p>Años de historia</p>
+      </div>
+
+      <div class="col-md-4">
+        <h3 class="text-primary">10K+</h3>
+        <p>Egresados</p>
+      </div>
+
+      <div class="col-md-4">
+        <h3 class="text-primary">30+</h3>
+        <p>Programas académicos</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- 🔴 FOOTER -->
+<footer class="bg-dark text-white text-center p-4 mt-5">
+  <p class="mb-0">© 2026 ITLA - Todos los derechos reservados</p>
+</footer>
+
+<!-- Bootstrap -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+</html>
